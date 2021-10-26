@@ -61,11 +61,86 @@ a{
     overflow: hidden;
 }
 
-.search{
-    background-color: #101013;
+.searchea{
+    background-color: #17181c; 
     width: 65vw;
     height: 5vh;
     float: right;
+}
+/* ------------------------------ */
+#wrap {
+    margin-top: 2.5vh;
+    margin-left: 48vw;
+    display: inline-block;
+    position: relative;
+    height: 2vh;
+    padding: 0;
+    position: relative;
+  }
+  
+  input[type="text"] {
+    height: 20px;
+    font-size: 15px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    color:#78797d;
+    padding: 3px;
+    padding-right: 60px;
+    width: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    z-index: 3;
+    transition: width .5s cubic-bezier(0.000, 0.100, 0.000, 1.000);
+    cursor: pointer;
+  }
+  
+  input[type="text"]:focus {
+    width: 6.5vw;
+    z-index: 1;
+    border-bottom: 1px solid #78797d;
+    cursor: text;
+    margin-right: 3vw;
+  }
+  input[type="submit"] {
+    height: 2vh;
+    width: 1vw;
+    display: inline-block;
+    background: url(lupa.png);
+    background-size: 21px 21px;
+    background-repeat: no-repeat;
+    text-indent: -10000px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity .4s ease;
+  }
+  
+  input[type="submit"]:hover {
+    opacity: 1;
+  }
+
+/* ------------------------------ */
+
+.buttonsearchbar{
+    background-color: #fa9127;
+    width: 5.3vw;
+    height: 2.7vh;
+    margin-top: 1.3vh;
+    text-align: center;
+    padding-top: 1.3vh;
+    padding-left: 0.7vw;
+    float: right;
+    margin-right: 5vw;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 600;
 }
 
 .tab{
