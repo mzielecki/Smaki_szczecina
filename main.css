@@ -93,7 +93,7 @@ a{
     right: 0;
     background: none;
     z-index: 3;
-    transition: width .5s cubic-bezier(0.000, 0.100, 0.000, 1.000);
+    transition: width .8s cubic-bezier(0.000, 0.100, 0.000, 1.000);
     cursor: pointer;
   }
   
@@ -135,11 +135,11 @@ a{
     margin-top: 1.3vh;
     text-align: center;
     padding-top: 1.3vh;
-    padding-left: 0.7vw;
+    padding-left: 0.2vw;
     float: right;
-    margin-right: 5vw;
+    margin-right: 6vw;
     border-radius: 30px;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 600;
 }
 
@@ -216,7 +216,7 @@ a:hover{
 
 .buttontext{
     color: black;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     font-family: Sansation;
     float: left;
@@ -231,7 +231,7 @@ a:hover{
 }
 
 .right{
-    background-color: #4d2409;
+    background-color: #17181c;
     height: 60vh;
     width: 65vw;
     float: right;
