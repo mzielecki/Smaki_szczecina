@@ -1,12 +1,19 @@
 body{
     background-color: #17181c;
     font-family: Sansation;
+    overflow: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
 }
 
 a{
     color: #78797d;
     text-decoration: none;
     padding-left: 1vw;
+    padding-top: 1.9vh;
 }
 
 /*.main {
@@ -17,7 +24,7 @@ a{
 
 .top{
     background-color: #17181c;
-    width: calc(100vw - 10px);
+    width: 100vw;
     height: 15vh;
     font-family: Sansation;
     float: left;
@@ -36,24 +43,21 @@ a{
 .menuleft{
     background-color: #17181c;
     border-bottom: 2px solid #393a3e;
-    width: calc(23vw - 10px);
-    height: 4vh;
+    width: 23vw;
+    height: 6vh;
     float: left;
     color: #78797d;
     text-align: center;
     font-size: 25px;
-    padding-top: 2vh;
 }
 
 .menuright{
     background-color: #17181c ;
     border-bottom: 2px solid #393a3e;
     color: #78797d;
-    font-size: 18px;
     width: 66vw;
-    height: 4vh;
+    height: 6vh;
     float: left;
-    padding-top: 2vh;
     overflow: hidden;
 }
 
@@ -67,6 +71,8 @@ a{
 .tab{
     float: left;
     padding-left: 3vw;
+    padding-top: 2vh;
+    font-size: 14px;
 }
 
 .media{
@@ -135,7 +141,7 @@ a:hover{
 
 .buttontext{
     color: black;
-    font-size: 22px;
+    font-size: 17.5px;
     font-weight: bold;
     font-family: Sansation;
     float: left;
@@ -153,5 +159,36 @@ a:hover{
     background-color: #4d2409;
     height: 60vh;
     width: 65vw;
+    float: right;
+}
+
+.blankspace{
+    background-color: #17181c;
+    width: 100vw;
+    height: 20vh;
     float: left;
+}
+
+.footer{
+    width: 100vw;
+    height: 5vh;
+    line-height: 4.7vh;
+    background-color: #17181c;
+    float: left;
+    text-align: center;
+
+}
+
+.mediaa{
+    font-size: 15px;
+    padding-left: 1.5vw;
+    text-align: center;
+    display: inline;
+    padding-top: 1vh;
+    color:#78797d;
+}
+
+.mediaa:hover{
+    color: #fa9127;
+    cursor: pointer;
 }
