@@ -231,9 +231,19 @@ a:hover{
 }
 
 .right{
-    background-color: #17181c;
-    height: 60vh;
-    width: 65vw;
+    background-color: #3e5cd4;
+    height: 55vh;
+    width: 55vw;
+    float: right;
+    
+}
+
+.photos{
+    width: 55vw;
+    height: 50vh;
+    background-image: url("right.png");
+    background-repeat: no-repeat;
+    background-size:cover;
     float: right;
 }
 
@@ -267,3 +277,4 @@ a:hover{
     color: #fa9127;
     cursor: pointer;
 }
+
