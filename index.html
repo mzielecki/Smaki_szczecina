@@ -7,6 +7,8 @@
     <title>Smaki Szczecina</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+    <script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
 </head>
 <body>
     <!-- wszystko -->
@@ -61,7 +63,57 @@
         <!-- prawy panel -->
         <div class="right">
             <!-- narazie nie wiem co tu dac lol kys :) -->
-            <div class="photos"></div>
+            <div class="photos">
+                <!-- <button class="nextbtt">Next</button>
+                <div class="photo1"></div>
+                <div class="photo2"></div>
+                <div class="photo3"></div>
+                <button class="prevbtt">Prev</button> -->
+                <div class="embla">
+                    <div class="gradient-fade-left"></div>
+                    <div class="embla__viewport">
+                        <div class="embla__container">
+                            <div class="embla__slide">
+                                <div class="embla__slide__inner" id="slide1"><img src="FB-3.jpg" width="250" height="450"/></div>
+                            </div>
+                            <div class="embla__slide">
+                                <div class="embla__slide__inner" id="slide2"><img src="FB-20.jpg "  width="250" height="450"/></div>
+                            </div>
+                            <div class="embla__slide">
+                                <div class="embla__slide__inner" id="slide3"><img src="FB-33.jpg"  width="250" height="450"/></div>
+                            </div>
+                            <div class="embla__slide">
+                                <div class="embla__slide__inner" id="slide4"><img src="FB-32.jpg"  width="250" height="450"/></div>
+                            </div>
+                            <div class="embla__slide">
+                                <div class="embla__slide__inner" id="slide5"><img src="FB-41.jpg"  width="250" height="450"/></div>
+                            </div>
+                            <div class="embla__slide">
+                                <div class="embla__slide__inner" id="slide6"><img src="FB-37.jpg"  width="250" height="450"/></div>
+                            </div>
+                            <div class="embla__slide">
+                                <div class="embla__slide__inner" id="slide7"><img src="FB-49.jpg"  width="250" height="450"/></div>
+                            </div>
+                            <div class="embla__slide">
+                                <div class="embla__slide__inner" id="slide8"><img src="FB-7.jpg"  width="250" height="450"/></div>
+                            </div>
+                        </div>
+                        <div class="gradient-fade-right"></div>
+                    </div>
+                </div>
+                  <script type="text/javascript">
+                    const wrap = document.querySelector(".embla");
+                    const viewPort = wrap.querySelector(".embla__viewport");
+                    const autoplay = EmblaCarouselAutoplay(
+                        { delay: 3000, stopOnInteraction: false },
+                        (emblaRoot) => emblaRoot.parentElement
+                    );
+                    
+
+                    const embla = EmblaCarousel(viewPort, {slidesToScroll: 4, skipSnaps: false, loop: true}, [autoplay]);
+                    
+                  </script>
+            </div>
             <div class="underphotos">
                 <div class="circle"></div>
                 <div class="firstline"></div>
