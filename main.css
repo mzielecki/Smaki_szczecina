@@ -2,8 +2,6 @@ body{
     background-color: #17181c;
     font-family: Sansation;
     overflow: hidden;
-    min-height: 500px;
-    height: auto;
 }
 
 *{
@@ -14,9 +12,15 @@ body{
 a{
     color: #78797d;
     text-decoration: none;
-    margin-left: 20px;
-    margin-top: 16px;
-}  
+    padding-left: 1vw;
+    padding-top: 1.9vh;
+}
+
+/*.main {
+    background-color: #17181c;
+    width: 97vw;
+    height: 97vh;
+}*/     
 
 .top{
     background-color: #17181c;
@@ -31,16 +35,14 @@ a{
     height: 10vh;
     width: 10vw;
     border-top: 1vh solid #17181c;
-    border-left: 1vw solid #17181c;
-    border-bottom: 2vh solid #17181c;
-    float: left;    
+    float: left;
 }
 
 .menuleft{
     background-color: #17181c;
     border-bottom: 2px solid #393a3e;
     width: 23vw;
-    height: 55px;
+    height: 5vh;
     float: left;
     color: #78797d;
     text-align: center;
@@ -52,24 +54,26 @@ a{
     border-bottom: 2px solid #393a3e;
     color: #78797d;
     width: 66vw;
-    height: 55px;
+    height: 5vh;
     float: left;
+    overflow: hidden;
 }
 
 .searchea{
     background-color: #17181c; 
     width: 65vw;
-    height: 20px;
+    height: 5vh;
     float: right;
 }
 /* ------------------------------ */
 #wrap {
     margin-top: 2.5vh;
-    margin-left: 60vw;
+    margin-left: 48vw;
     display: inline-block;
     position: relative;
     height: 2vh;
     padding: 0;
+    position: relative;
   }
   
   input[type="text"] {
@@ -99,8 +103,8 @@ a{
     margin-right: 3vw;
   }
   input[type="submit"] {
-    height: 21px;
-    width: 21px;
+    height: 2vh;
+    width: 1vw;
     display: inline-block;
     background: url(lupa.png);
     background-size: 21px 21px;
@@ -122,11 +126,26 @@ a{
 
 /* ------------------------------ */
 
+.buttonsearchbar{
+    background-color: #fa9127;
+    width: 5.3vw;
+    height: 2.5vh;
+    margin-top: 1.3vh;
+    text-align: center;
+    padding-top: 1.3vh;
+    padding-left: 0.2vw;
+    float: right;
+    margin-right: 6vw;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
 .tab{
     float: left;
     padding-left: 3vw;
-    padding-top: 19px;
-    font-size: 15px;
+    padding-top: 2vh;
+    font-size: 14px;
 }
 
 .media{
@@ -149,7 +168,7 @@ a:hover{
     font-size: 60px;
     text-align: left;
     font-weight: bold;
-    margin-top: 15vh;
+    margin-top: 20vh;
     margin-left: 2vw;
 }
 
@@ -171,7 +190,7 @@ a:hover{
 
 .looktext{
     color: #fa9127;
-    padding-top: 1.5vh;
+    padding-top: 2vh;
     width: 20vw;
     height: 2vh;
     background-color: #17181c;
@@ -181,18 +200,16 @@ a:hover{
 
 .buttonleft{
     background-color: #17181c;
-    margin-left: 1px;
     height: 15vh;
     width: 35vw;
     float: left;
-    
 }
 
 .button{
     background-color: #fa9127;
-    height: 80px;
-    width: 275px;
-    border-radius: 0px 25px 25px 0px; 
+    height: 7vh;
+    width: 12vw;
+    border-radius: 0px 25px 25px 0px;
 }
 
 .buttontext{
@@ -201,14 +218,14 @@ a:hover{
     font-weight: bold;
     font-family: Sansation;
     float: left;
-    padding-left: 15px;
-    padding-top: 30px;
+    padding-left: 1vw;
+    padding-top: 2.4vh;
 }
 
 .fire{
     float: left;
-    padding-left: 50px;
-    padding-top: 30px;
+    padding-left: 2vw;
+    padding-top: 2.4vh;
 }
 
 .right{
@@ -279,22 +296,21 @@ a:hover{
     float: left;
 }
 
-/* .blankspace{
+.blankspace{
     background-color: #17181c;
     width: 100vw;
     height: 20vh;
     float: left;
-} */
+}
 
 .footer{
-    width: 100%;
-    line-height: 30px;
+    width: 100vw;
+    height: 5vh;
+    line-height: 4.7vh;
     background-color: #17181c;
+    float: left;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
+
 }
 
 .mediaa{
@@ -302,7 +318,7 @@ a:hover{
     padding-left: 1.5vw;
     text-align: center;
     display: inline;
-    padding-top: 10px;
+    padding-top: 1vh;
     color:#78797d;
 }
 
@@ -311,3 +327,112 @@ a:hover{
     cursor: pointer;
 }
 
+.sort_panel{
+    float: left;
+    width: 100vw;
+    height: 4vh;
+    background-color: #1e2225;
+    padding-left: 19vw;
+    padding-top: 0.8vh;
+    box-sizing: border-box;
+}
+
+.sort_label{
+    color: #fa9127;
+    float: left;
+    margin-left: 15px;
+}
+
+.sort_options{
+    float: left;
+    margin-left: 5px;
+}
+
+.sort_options select{
+    background-color: #1e2225;
+    border: none;
+    color: #78797d;
+}
+
+.left_panel{
+    float: left;
+    width: 20vw;
+    height: 75vh;
+}
+
+.categories_panel{
+    width: 15vw;
+    height: 70vh;
+    border-radius: 10px;
+    background-color: #1e2225;
+    float: left;
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+
+.categories_panel h2{
+    color: white;
+    margin-left: 1.5vw;
+    margin-top: 2vh;
+    font-size: 30px;
+}
+
+.right_panel{
+    float: left;
+    width: 80vw;
+    height: 75vh;
+}
+
+.prototype_restaurantBox{
+    width: 17vw;
+    height: 40vh;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 2vh;
+}
+
+.restaurant_img img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.restaurant_name{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 1.5vh;
+    margin-left: 1vw;
+    float: left;
+}
+
+.restaurant_content{
+    width: 15vw;
+    font-size: 16px;
+    margin-top: 3vh;
+    margin-left: 1vw;
+    color: #7a7f84;
+    float: left;
+}
+
+.restaurant_cost{
+    font-size: 20px;
+    margin-top: 3vh;
+    margin-left: 3vw;
+    font-weight: bold;
+    float: left;
+}
+
+.restaurant_check_button{
+    float: right;
+    width: 7vw;
+    height: 5vh;
+    background-color: #fa9127;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-top: 2.2vh;
+    color: white;
+    padding-left: 1.5vw;
+    padding-top: 1.5vh;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: bold;
+}
