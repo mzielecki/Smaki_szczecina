@@ -2,6 +2,8 @@ body{
     background-color: #17181c;
     font-family: Sansation;
     overflow: hidden;
+    min-height: 500px;
+    height: auto;
 }
 
 *{
@@ -13,14 +15,8 @@ a{
     color: #78797d;
     text-decoration: none;
     margin-left: 20px;
-    margin-top: 22px;
-}
-
-/*.main {
-    background-color: #17181c;
-    width: 97vw;
-    height: 97vh;
-}*/     
+    margin-top: 16px;
+}  
 
 .top{
     background-color: #17181c;
@@ -37,14 +33,14 @@ a{
     border-top: 1vh solid #17181c;
     border-left: 1vw solid #17181c;
     border-bottom: 2vh solid #17181c;
-    float: left;
+    float: left;    
 }
 
 .menuleft{
     background-color: #17181c;
     border-bottom: 2px solid #393a3e;
     width: 23vw;
-    height: 64px;
+    height: 55px;
     float: left;
     color: #78797d;
     text-align: center;
@@ -56,9 +52,8 @@ a{
     border-bottom: 2px solid #393a3e;
     color: #78797d;
     width: 66vw;
-    height: 64px;
+    height: 55px;
     float: left;
-    overflow: hidden;
 }
 
 .searchea{
@@ -70,12 +65,11 @@ a{
 /* ------------------------------ */
 #wrap {
     margin-top: 2.5vh;
-    margin-left: 48vw;
+    margin-left: 60vw;
     display: inline-block;
     position: relative;
     height: 2vh;
     padding: 0;
-    position: relative;
   }
   
   input[type="text"] {
@@ -128,26 +122,11 @@ a{
 
 /* ------------------------------ */
 
-.buttonsearchbar{
-    background-color: #fa9127;
-    width: 120px;
-    height: 30px;
-    margin-top: 20px;
-    text-align: center;
-    padding-top: 15px;
-    padding-left: 8px;
-    float: right;
-    margin-right: 6vw;
-    border-radius: 30px;
-    font-size: 12px;
-    font-weight: 600;
-}
-
 .tab{
     float: left;
     padding-left: 3vw;
-    padding-top: 24px;
-    font-size: 14px;
+    padding-top: 19px;
+    font-size: 15px;
 }
 
 .media{
@@ -170,7 +149,7 @@ a:hover{
     font-size: 60px;
     text-align: left;
     font-weight: bold;
-    margin-top: 20vh;
+    margin-top: 15vh;
     margin-left: 2vw;
 }
 
@@ -192,7 +171,7 @@ a:hover{
 
 .looktext{
     color: #fa9127;
-    padding-top: 2vh;
+    padding-top: 1.5vh;
     width: 20vw;
     height: 2vh;
     background-color: #17181c;
@@ -211,8 +190,8 @@ a:hover{
 
 .button{
     background-color: #fa9127;
-    height: 90px;
-    width: 300px;
+    height: 80px;
+    width: 275px;
     border-radius: 0px 25px 25px 0px; 
 }
 
@@ -309,7 +288,7 @@ a:hover{
 
 .footer{
     width: 100%;
-    line-height: 60px;
+    line-height: 30px;
     background-color: #17181c;
     text-align: center;
     position: fixed;
