@@ -1,7 +1,15 @@
 {% extends "base.html" %}
+{% load static %}
 
+{% block css_styles %}
+
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'css/for_index.css' %}">
+
+{% endblock %}
 
 {% block content %}
 <div> tresc dla indexa </div>
+<img src="{% static 'img/img.png' %}" alt="example"/>
 
 {% endblock %}
