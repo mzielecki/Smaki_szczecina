@@ -1,15 +1,87 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block css_styles %}
 
-{{ block.super }}
-<link rel="stylesheet" href="{% static 'css/for_index.css' %}">
 
-{% endblock %}
 
 {% block content %}
-<div> tresc dla indexa </div>
-<img src="{% static 'img/img.png' %}" alt="example"/>
+<!-------------------------------------------------------------------------------------->
+        <!-- lewy panel -->
+        <div class="left">
+            <div class="text1">Najpyszniejsze miejsca w Szczecinie</div>
+            <div class="look">
+                <div class="line"></div>
+                <div class="looktext">Zobacz wszystkie restauracje</div>
+            </div>
+            <div class="buttonleft">
+                <div class="button">
+                    <div class="fire"><img src="{% static 'img/fire.png' %}" width="20px" height="20px"></div>
+                    <a href="restaurations.html"><div class="buttontext">Zacznij</div></a>
+                </div>
+            </div>
+        </div>
+<!-------------------------------------------------------------------------------------->
+        <!-- prawy panel -->
+        <div class="right">
+            <!-- narazie nie wiem co tu dac lol kys :) -->
+            <div class="photos">
+                <!-- <button class="nextbtt">Next</button>
+                <div class="photo1"></div>
+                <div class="photo2"></div>
+                <div class="photo3"></div>
+                <button class="prevbtt">Prev</button> -->
+                <div class="embla">
+                    <div class="gradient-fade-left"></div>
+                    <div class="embla__viewport">
+                        <div class="embla__container">
+                            <div class="embla__slide">
+                                <div class="embla__slide__inner" id="slide1"><img src="{% static 'img/FB-3.jpg' %}" width="250" height="450"/></div>
+                            </div>
+                            <div class="embla__slide">
+                                <div class="embla__slide__inner" id="slide2"><img src="{% static 'img/FB-20.jpg' %} "  width="250" height="450"/></div>
+                            </div>
+                            <div class="embla__slide">
+                                <div class="embla__slide__inner" id="slide3"><img src="{% static 'img/FB-33.jpg' %}"  width="250" height="450"/></div>
+                            </div>
+                            <div class="embla__slide">
+                                <div class="embla__slide__inner" id="slide4"><img src="{% static 'img/FB-32.jpg' %}"  width="250" height="450"/></div>
+                            </div>
+                            <div class="embla__slide">
+                                <div class="embla__slide__inner" id="slide5"><img src="{% static 'img/FB-41.jpg' %}"  width="250" height="450"/></div>
+                            </div>
+                            <div class="embla__slide">
+                                <div class="embla__slide__inner" id="slide6"><img src="{% static 'img/FB-37.jpg' %}"  width="250" height="450"/></div>
+                            </div>
+                            <div class="embla__slide">
+                                <div class="embla__slide__inner" id="slide7"><img src="{% static 'img/FB-49.jpg' %}"  width="250" height="450"/></div>
+                            </div>
+                            <div class="embla__slide">
+                                <div class="embla__slide__inner" id="slide8"><img src="{% static 'img/FB-7.jpg' %}"  width="250" height="450"/></div>
+                            </div>
+                        </div>
+                        <div class="gradient-fade-right"></div>
+                    </div>
+                </div>
+                  <script type="text/javascript">
+                    const wrap = document.querySelector(".embla");
+                    const viewPort = wrap.querySelector(".embla__viewport");
+                    const autoplay = EmblaCarouselAutoplay(
+                        { delay: 3000, stopOnInteraction: false },
+                        (emblaRoot) => emblaRoot.parentElement
+                    );
+
+
+                    const embla = EmblaCarousel(viewPort, {slidesToScroll: 4, skipSnaps: false, loop: true}, [autoplay]);
+
+                  </script>
+            </div>
+            <div class="underphotos">
+                <div class="circle"></div>
+                <div class="firstline"></div>
+                <div class="textunderphotos">Zobacz więcej</div>
+                <div class="secondline"></div>
+            </div>
+        </div>
+<!-------------------------------------------------------------------------------------->
 
 {% endblock %}
