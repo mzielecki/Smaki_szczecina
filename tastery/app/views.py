@@ -10,3 +10,10 @@ def index(request: HttpRequest) -> HttpResponse:
 def contacts(request: HttpRequest) -> HttpResponse:
 
     return render(request, 'contacts.html')
+
+
+def restaurants(request: HttpRequest) -> HttpResponse:
+
+    return render(request, 'restaurants.html')
+
+
