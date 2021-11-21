@@ -4,8 +4,8 @@
 
 
 {% block content %}
-<!-------------------------------------------------------------------------------------->
-            <!-- panel pod searchmenu -->
+
+
         <div class="sort_panel">
             <div class="sort_label">Sort:</div>
             <div class="sort_options">
@@ -24,19 +24,20 @@
                 </select>
             </div>
         </div>
-<!-------------------------------------------------------------------------------------->
-            <!-- lewy panel -->
+
+
+
         <div class="left_panel">
             <div class="categories_panel">
                 <h2>Kategorie</h2>
             </div>
         </div>
 
-<!-------------------------------------------------------------------------------------->
-            <!-- prawy panel -->
+
+
             <div class="right_panel">
                 <div class="prototype_restaurantBox">
-                    <div class="restaurant_img"><img src="FB-20.jpg" width="326" height="180"/></div>
+                    <div class="restaurant_img"><img src="{% static 'img/FB-20.png' %}" width="326" height="180"/></div>
                     <div class="restaurant_name">La Casa de Kebab - Szczecin</div>
                     <div class="restaurant_content">Najlpeszy Kebab w Szczecinie. Potwierdzają nawet ludzie z Gryfina</div>
                     <div class="restaurant_cost">20zł / szt</div>
@@ -44,7 +45,6 @@
                 </div>
             </div>
 
-<!-------------------------------------------------------------------------------------->
 
 
 {% endblock %}

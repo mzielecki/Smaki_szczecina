@@ -7,13 +7,16 @@ def index(request: HttpRequest) -> HttpResponse:
     return render(request, 'index.html')
 
 
+def restaurants(request: HttpRequest) -> HttpResponse:
+
+    return render(request, 'restaurants.html')
+
+
 def contacts(request: HttpRequest) -> HttpResponse:
 
     return render(request, 'contacts.html')
 
 
-def restaurants(request: HttpRequest) -> HttpResponse:
 
-    return render(request, 'restaurants.html')
 
 
