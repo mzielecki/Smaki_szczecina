@@ -2,6 +2,8 @@ body{
     background-color: #17181c;
     font-family: Sansation;
     overflow: hidden;
+    min-height: 500px;
+    height: auto;
 }
 
 *{
@@ -12,15 +14,9 @@ body{
 a{
     color: #78797d;
     text-decoration: none;
-    padding-left: 1vw;
-    padding-top: 1.9vh;
+    margin-left: 20px;
+    margin-top: 16px;
 }
-
-/*.main {
-    background-color: #17181c;
-    width: 97vw;
-    height: 97vh;
-}*/     
 
 .top{
     background-color: #17181c;
@@ -35,14 +31,18 @@ a{
     height: 10vh;
     width: 10vw;
     border-top: 1vh solid #17181c;
+    border-left: 1vw solid #17181c;
+    border-bottom: 2vh solid #17181c;
     float: left;
+    float: left;    
 }
 
 .menuleft{
     background-color: #17181c;
     border-bottom: 2px solid #393a3e;
     width: 23vw;
-    height: 5vh;
+    height: 64px;
+    height: 55px;
     float: left;
     color: #78797d;
     text-align: center;
@@ -54,7 +54,8 @@ a{
     border-bottom: 2px solid #393a3e;
     color: #78797d;
     width: 66vw;
-    height: 5vh;
+    height: 64px;
+    height: 55px;
     float: left;
     overflow: hidden;
 }
@@ -62,13 +63,14 @@ a{
 .searchea{
     background-color: #17181c; 
     width: 65vw;
-    height: 5vh;
+    height: 20px;
     float: right;
 }
 /* ------------------------------ */
 #wrap {
     margin-top: 2.5vh;
     margin-left: 48vw;
+    margin-left: 60vw;
     display: inline-block;
     position: relative;
     height: 2vh;
@@ -103,8 +105,8 @@ a{
     margin-right: 3vw;
   }
   input[type="submit"] {
-    height: 2vh;
-    width: 1vw;
+    height: 21px;
+    width: 21px;
     display: inline-block;
     background: url(lupa.png);
     background-size: 21px 21px;
@@ -128,12 +130,12 @@ a{
 
 .buttonsearchbar{
     background-color: #fa9127;
-    width: 5.3vw;
-    height: 2.5vh;
-    margin-top: 1.3vh;
+    width: 120px;
+    height: 30px;
+    margin-top: 20px;
     text-align: center;
-    padding-top: 1.3vh;
-    padding-left: 0.2vw;
+    padding-top: 15px;
+    padding-left: 8px;
     float: right;
     margin-right: 6vw;
     border-radius: 30px;
@@ -144,8 +146,10 @@ a{
 .tab{
     float: left;
     padding-left: 3vw;
-    padding-top: 2vh;
+    padding-top: 24px;
     font-size: 14px;
+    padding-top: 19px;
+    font-size: 15px;
 }
 
 .media{
@@ -169,6 +173,7 @@ a:hover{
     text-align: left;
     font-weight: bold;
     margin-top: 20vh;
+    margin-top: 15vh;
     margin-left: 2vw;
 }
 
@@ -191,6 +196,7 @@ a:hover{
 .looktext{
     color: #fa9127;
     padding-top: 2vh;
+    padding-top: 1.5vh;
     width: 20vw;
     height: 2vh;
     background-color: #17181c;
@@ -200,16 +206,20 @@ a:hover{
 
 .buttonleft{
     background-color: #17181c;
+    margin-left: 1px;
     height: 15vh;
     width: 35vw;
     float: left;
+    
 }
 
 .button{
     background-color: #fa9127;
-    height: 7vh;
-    width: 12vw;
-    border-radius: 0px 25px 25px 0px;
+    height: 90px;
+    width: 300px;
+    height: 80px;
+    width: 275px;
+    border-radius: 0px 25px 25px 0px; 
 }
 
 .buttontext{
@@ -218,14 +228,14 @@ a:hover{
     font-weight: bold;
     font-family: Sansation;
     float: left;
-    padding-left: 1vw;
-    padding-top: 2.4vh;
+    padding-left: 15px;
+    padding-top: 30px;
 }
 
 .fire{
     float: left;
-    padding-left: 2vw;
-    padding-top: 2.4vh;
+    padding-left: 50px;
+    padding-top: 30px;
 }
 
 .right{
@@ -296,21 +306,23 @@ a:hover{
     float: left;
 }
 
-.blankspace{
+/* .blankspace{
     background-color: #17181c;
     width: 100vw;
     height: 20vh;
     float: left;
-}
+} */
 
 .footer{
-    width: 100vw;
-    height: 5vh;
-    line-height: 4.7vh;
+    width: 100%;
+    line-height: 60px;
+    line-height: 30px;
     background-color: #17181c;
-    float: left;
     text-align: center;
-
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .mediaa{
@@ -318,7 +330,7 @@ a:hover{
     padding-left: 1.5vw;
     text-align: center;
     display: inline;
-    padding-top: 1vh;
+    padding-top: 10px;
     color:#78797d;
 }
 
