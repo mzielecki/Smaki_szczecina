@@ -12,6 +12,11 @@ def restaurants(request: HttpRequest) -> HttpResponse:
     return render(request, 'restaurants.html')
 
 
+def gallery(request: HttpRequest) -> HttpResponse:
+
+    return render(request, 'gallery.html')
+
+
 def contacts(request: HttpRequest) -> HttpResponse:
 
     return render(request, 'contacts.html')
