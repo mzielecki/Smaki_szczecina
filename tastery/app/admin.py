@@ -6,8 +6,8 @@ from app.models import Restaurant
 
 
 class AuthorAdmin(admin.ModelAdmin):
-    fields = ('name', 'address', 'rating')
-    list_display = ('name', 'address', 'rating')
+    fields = ('name', 'description', 'address', 'district', 'price', 'rating')
+    list_display = ('name', 'description', 'address', 'district', 'price', 'rating')
 
 
 admin.site.register(Restaurant, AuthorAdmin)

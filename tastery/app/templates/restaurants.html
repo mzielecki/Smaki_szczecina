@@ -39,10 +39,11 @@
                 {% for restaurant in restaurants %}
                     <div class="prototype_restaurantBox">
                      <div class="restaurant_img"><img src="{% static 'img/fb-42.jpg' %}" width="326" height="180"/></div>
-                     <div class="restaurant_name">{{ restaurant.name }}</div>
-                      <div class="restaurant_content">Najlpeszy Kebab w Szczecinie. Potwierdzają nawet ludzie z Gryfina</div>
-                    <div class="restaurant_cost">420zł / szt</div>
-                    <div class="restaurant_check_button">Sprawdź</div>
+                        <div class="restaurant_name">{{ restaurant.name }}</div>
+                      <div class="restaurant_content">{{ restaurant.description }}</div>
+                    <div class="restaurant_cost">{{ restaurant.price }} zł/szt</div>
+                        <div class="restaurant_check_button">Sprawdź</div>
+                        <div class="restaurant_district">{{ restaurant.district }}</div>
                     </div>
                  {% endfor %}
 

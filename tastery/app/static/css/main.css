@@ -374,9 +374,8 @@ a:hover{
     float:left;
     width: 80vw;
     height: 75vh;
-
+    overflow-y:scroll;
 }
-
 
 .right_panel_gallery{
     width: 80vw;
@@ -391,6 +390,8 @@ a:hover{
     background-color: white;
     border-radius: 15px;
     margin-top: 2vh;
+    margin-left: 2vh;
+    float:left;
 }
 
 .restaurant_img img{
@@ -439,6 +440,12 @@ a:hover{
     font-weight: bold;
 }
 
+.restaurant_district{
+    float: left;
+    margin-top: 2vh;
+    margin-left: 1vw;
+}
+
 .photo_block{
     background: #fa9127;
     width: 23.5%;
@@ -447,3 +454,28 @@ a:hover{
     margin-left: 5%;
     margin-top: 1%;
 }
+
+
+/* width */
+.right_panel_list::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.right_panel_list::-webkit-scrollbar-track {
+  background: grey;
+}
+
+/* Handle */
+.right_panel_list::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+/* Handle on hover */
+.right_panel_list::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+
+
+
+
