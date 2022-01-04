@@ -370,6 +370,12 @@ a:hover{
     font-size: 30px;
 }
 
+.categories_panel div{
+    margin-left: 2vw;
+    margin-top: 1.5vh;
+    color: grey;
+}
+
 .right_panel_list{
     float:left;
     width: 80vw;
@@ -476,6 +482,257 @@ a:hover{
   background: white;
 }
 
+
+
+
+.toptab{
+    width: 100vw;
+    height: 55px;
+    background-color: #17181c;
+    color: #FFFFFF;
+    font-weight: bold;
+    float: left;
+    margin-top: 100px;
+    font-size: 24px;
+}
+
+.my{
+    float: left;
+    padding-left: 100px;
+}
+
+.onas{
+    padding-left: 1400px;
+    float: left;
+}
+
+.textbox1{
+    color: #7A7F84;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    width: 1350px;
+    height: 450px;
+    background-color: #17181c;
+    float: left;
+    margin-left: 100px;
+}
+
+.fields{
+    width: 968px;
+    height: 378px;
+    float: left;
+    margin-left: 80px;
+}
+
+.textfield1{
+    width: 465px;
+    height: 185px;
+    background-color: #1F2125;
+    float: left;
+    display: block;
+    color: #7A7F84;
+    font-size: 16px;
+    padding-left: 4px;
+    padding-top: 4px;
+}
+
+.photofield1{
+    width: 469px;
+    height: 189px;
+    background-color: palegreen;
+    float: left;
+    display: block;
+}
+
+.textfield2{
+    width: 465px;
+    height: 185px;
+    background-color: #1F2125;
+    float: left;
+    display: block;
+    color: #7A7F84;
+    font-size: 16px;
+    padding-left: 4px;
+    padding-top: 4px;
+}
+
+.photofield2{
+    width: 469px;
+    height: 189px;
+    background-color: palegreen;
+    float: left;
+    display: block;
+}
+
+.ourphotos{
+    width: 808px;
+    height: 320px;
+    float: left;
+    clear: both;
+    margin-left: 300px;
+}
+
+.zd1{
+    width: 202px;
+    height: 320px;
+    float: left;
+    background-color: #fa9127;
+}
+
+.zd2{
+    width: 202px;
+    height: 320px;
+    float: left;
+    background-color: #c06d1a;
+}
+
+.zd3{
+    width: 202px;
+    height: 320px;
+    float: left;
+    background-color: #fa9127;
+}
+
+.zd4{
+    width: 202px;
+    height: 320px;
+    float: left;
+    background-color: #996028;
+}
+
+.texts{
+    width: 808px;
+    height: 20px;
+    float: left;
+}
+
+.txt1{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    width: 202px;
+    height: 20px;
+    float: left;
+}
+
+.txt2{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    width: 202px;
+    height: 20px;
+    float: left;
+}
+
+.txt3{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    width: 202px;
+    height: 20px;
+    float: left;
+}
+
+.txt4{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    width: 202px;
+    height: 20px;
+    float: left;
+}
+
+.mapa{
+    width: 469px;
+    height: 304px;
+    float: left;
+    background-color: aqua;
+    margin-top: 70px;
+}
+
+.kontaktbox{
+    width: 469px;
+    height: 304px;
+    float: left;
+    background-color: #1F2125;
+    margin-top: 70px;
+}
+
+.kontakt{
+    width: 300px;
+    height: 304px;
+    float: left;
+    color: #7A7F84;
+    font-size: 14px;
+}
+
+.mail1{
+    margin-top: 45px;
+    margin-left: 25px;
+}
+
+.mail2{
+    margin-top: 18px;
+    margin-left: 25px;
+}
+
+.mail3{
+    margin-top: 18px;
+    margin-left: 25px;
+}
+
+.tel1{
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.tel2{
+    margin-top: 18px;
+    margin-left: 25px;
+}
+
+.adres1{
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.actions{
+    width: 100px;
+    height: 304px;
+    float: left;
+    color: #51545A;
+    font-size: 14px;
+    text-decoration: underline;
+    margin-left: 40px;
+}
+
+.napisz1{
+    margin-top: 45px;
+}
+
+.napisz2{
+    margin-top: 18px;
+}
+
+.napisz3{
+    margin-top: 18px;
+}
+
+.zadzwoń1{
+    margin-top: 30px;
+}
+
+.zadzwoń2{
+    margin-top: 18px;
+}
+
+.podgląd{
+    margin-top: 30px;
+}
 
 
 
