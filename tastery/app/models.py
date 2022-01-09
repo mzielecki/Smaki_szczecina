@@ -10,6 +10,7 @@ class Restaurant(models.Model):
     price = models.IntegerField()
     description = models.CharField(max_length=100)
     district = models.CharField(max_length=50)
+    image = models.ImageField(blank=True)
 
 
 class Categorie(models.Model):

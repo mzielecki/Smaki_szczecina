@@ -34,7 +34,6 @@
                 {% for categorie in categories %}
 
                 <div>{{ categorie.category }}</div>
-                <h2>Kategorie</h2>
 
                 {% endfor %}
 
@@ -46,9 +45,15 @@
             <div class="right_panel_list">
                 {% for restaurant in restaurants %}
                     <div class="prototype_restaurantBox">
-                     <div class="restaurant_img"><img src="{% static 'img/fb-42.jpg' %}" width="326" height="180"/></div>
-                        <div class="restaurant_name">{{ restaurant.name }}</div>
-                      <div class="restaurant_content">{{ restaurant.description }}</div>
+
+                    {% if restaurant.image %}
+                        <div class="restaurant_img"><img src="{{ restaurant.image.url }}" width="326" height="180"/></div>
+                    {% else %}
+                        <div class="restaurant_img"><img src="{% static 'img/fb-42.png' %}" width="326" height="180"/></div>
+                    {% endif %}
+
+                    <div class="restaurant_name">{{ restaurant.name }}</div>
+                    <div class="restaurant_content">{{ restaurant.description }}</div>
                     <div class="restaurant_cost">{{ restaurant.price }} zł/szt</div>
                         <div class="restaurant_check_button">Sprawdź</div>
                         <div class="restaurant_district">{{ restaurant.district }}</div>

@@ -6,26 +6,15 @@ from .models import Restaurant, Categorie
 
 def index(request: HttpRequest) -> HttpResponse:
 
-    all_restaurants = Restaurant.objects.all()
-    all_categories = Categorie.objects.all()
-    return render(request, 'index.html', {
-        'restaurants': all_restaurants,
-        'categories': all_categories
-    })
+    return render(request, 'index.html')
 
 
 def restaurants(request: HttpRequest) -> HttpResponse:
 
-    all_restaurants = Restaurant.objects.order_by()
-    return render(request, 'restaurants.html', {
-        'restaurants': all_restaurants
-    })
-
-
-def categories(request: HttpRequest) -> HttpResponse:
-
     all_categories = Categorie.objects.order_by()
+    all_restaurants = Restaurant.objects.order_by('name')
     return render(request, 'restaurants.html', {
+        'restaurants': all_restaurants,
         'categories': all_categories
     })
 

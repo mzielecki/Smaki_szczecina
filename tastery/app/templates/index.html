@@ -13,22 +13,18 @@
                 <div class="looktext">Zobacz wszystkie restauracje</div>
             </div>
             <div class="buttonleft">
-                <div class="button">
-                    <div class="fire"><img src="{% static 'img/fire.png' %}" width="20px" height="20px"></div>
-                    <a href="{% url 'restaurants_list' %}"><div class="buttontext">Zacznij</div></a>
-                </div>
+                <a href="{% url 'restaurants_list' %}">
+                    <div class="button">
+                        <div class="fire"><img src="{% static 'img/fire.png' %}" width="20px" height="20px"></div>
+                        <div class="buttontext">Zacznij</div>
+                    </div>
+                </a>
             </div>
         </div>
 
 
         <div class="right">
-            <!-- narazie nie wiem co tu dac lol kys :) -->
             <div class="photos">
-                <!-- <button class="nextbtt">Next</button>
-                <div class="photo1"></div>
-                <div class="photo2"></div>
-                <div class="photo3"></div>
-                <button class="prevbtt">Prev</button> -->
                 <div class="embla">
                     <div class="gradient-fade-left"></div>
                     <div class="embla__viewport">

@@ -448,7 +448,7 @@ a:hover{
 
 .restaurant_district{
     float: left;
-    margin-top: 2vh;
+    padding-top: 1vh;
     margin-left: 1vw;
 }
 
