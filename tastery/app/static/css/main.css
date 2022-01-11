@@ -487,7 +487,7 @@ a:hover{
 
 .toptab{
     width: 100vw;
-    height: 55px;
+    height: 35px;
     background-color: #17181c;
     color: #FFFFFF;
     font-weight: bold;
@@ -504,17 +504,39 @@ a:hover{
 .onas{
     padding-left: 1400px;
     float: left;
+    margin-left: 50px;
 }
 
 .textbox1{
-    color: #7A7F84;
+    color: white;
     font-size: 16px;
     letter-spacing: 1.5px;
-    width: 1350px;
+    background-color: #17181c;
+    float: left;
+    margin-left: 100px;
+    width: 1300px;
+}
+
+.textbox2{
+    color: #7A7F84;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    width: 1300px;
     height: 450px;
     background-color: #17181c;
     float: left;
     margin-left: 100px;
+}
+
+.textbox3{
+    color: #7A7F84;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    width: 400px;
+    height: 450px;
+    background-color: #17181c;
+    float: left;
+    margin-left: 10px;
 }
 
 .fields{
