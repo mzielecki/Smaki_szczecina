@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+{% block content %}
+
+
+        <div class="sort_panel">
+            <div class="sort_label">Sort:</div>
+            <div class="sort_options">
+                <select>
+                    <option>Cena najmniejsza</option>
+                    <option>Cena największa</option>
+                </select>
+            </div>
+            <div class="sort_label">Odległość: </div>
+            <div class="sort_options">
+                <select>
+                    <option>Jak najbliżej</option>
+                    <option>do 5km</option>
+                    <option>do 10km</option>
+                    <option>do 15km</option>
+                </select>
+            </div>
+        </div>
+
+
+
+        <div class="left_panel">
+            <div class="categories_panel">
+                <h2>Kategorie</h2>
+
+                {% for categorie in categories %}
+
+                <div>{{ categorie.category }}</div>
+
+                {% endfor %}
+
+            </div>
+        </div>
+
+
+
+            <div class="right_panel_list">
+                {% for restaurant in restaurants %}
+                    <div class="prototype_restaurantBox">
+
+                    {% if restaurant.image %}
+                        <div class="restaurant_img"><img src="{{ restaurant.image.url }}" width="326" height="180"/></div>
+                    {% else %}
+                        <div class="restaurant_img"><img src="{% static 'img/fb-42.png' %}" width="326" height="180"/></div>
+                    {% endif %}
+
+                    <div class="restaurant_name">{{ restaurant.name }}</div>
+                    <div class="restaurant_content">{{ restaurant.description }}</div>
+                    <div class="restaurant_cost">{{ restaurant.price }} zł/szt</div>
+                        <div class="restaurant_check_button">Sprawdź</div>
+                        <div class="restaurant_district">{{ restaurant.district }}</div>
+                    </div>
+                 {% endfor %}
+
+            </div>
+
+
+
+{% endblock %}

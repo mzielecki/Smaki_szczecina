@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+
+{% block content %}
+
+        <div class="toptab">
+            <div class="my">Kim jesteśmy?</div>
+            <div class="onas">O projekcie
+                <div class="textbox3">Smaki Szczecina to strona ze wszystkimi wartymi uwagi restauracjami w Szczecinie. Ma na celu ułatwienie ludziom wybór restauracji na wieczorną kolację, randkę czy obiad rodzinny. Część restauracji jest niedostępnych w Internecie, a do części zwyczajnie ciężko się dostać. My chcemy, aby proces wyboru restauracji był szybki i prosty. Dzięki naszym sposobom filtrowania użytkownicy będą mogli wybrać restauracje, tylko z wybranego regionu Szczecina bądź wybranej kuchnii.</div>
+            </div>
+        </div>
+
+        <div class="textbox1"><h4>Jesteśmy grupą młodych ludzi z Technikum Informatycznego SCI w Szczecinie. W ramach programu naszej szkoły w małych zespołach tworzymy projekt zawodowy na wcześniej wybrany temat. Każdy z nas, poza programowaniem, ma wyjątkowe umiejętności, które mniej lub bardziej pomagają przy tworzeniu naszej strony.</div>
+        <div class="textbox2">
+            <br><br><h4>Hubert</h4> Jest liderem zespołu i dba o to, by całej drużynie pracowało się komfortowo, a zarazem sprawnie. Jest odpowiedzialny za wszelkie sprawy organizacyjne, związane z projektem i prezentacje oraz przedstawienia na temat projektu. Zajmuje się również treścią, która widnieje na stronie, min. pisze opisy restauracji. Jednak gdy któryś z członków drużyny ma problem techniczny, stara się wspólnie z nim go rozwiązać. Hubert jest zapalonym fotografem, kocha siatkówkę i lubi oglądać formułę 1.</h4>
+            <br><br><h4>Kacper</h4> Jest odpowiedzialny za cały back-end strony, czyli wszystko to czego nie widać, a co wymagane jest, by strona działa poprawnie. Mimo że, jego pracy nie widać na pierwszy rzut oka, wykonuje naprawdę ciężkie zadania, które pozostałym członkom drużyny sprawiłyby spore problemy. Kacper od zawsze kochał sport i był z nim mocno związane. Obecnie trenuje akrobatykę oraz prowadzi własne konto na tiktoku.
+            <br><br><h4>Mateusz</h4> Odpowiada za front-end naszej strony. Wszystko to co zaprojektuje Sergiusz zamienia w kod, który pozwala nam wyświetlić to w Internecie. Każda część „Smaków Szczecina”, wszelkie zakładki, przyciski i części naszej strony są zasługą Mateusza. Zajmuje się również responsywnością tak, by nasza strony wyglądała jak najlepiej na każdym urządzeniu, na jakim zostanie wyświetlona. Mateusz przez wiele lat tańczył taniec towarzyski, ale również interesuje się grą w szachy.
+            <br><br><h4>Sergiusz</h4> Tworzy i designuje projekt naszej strony. Zanim Mateusz stworzy cokolwiek w kodzie, Sergiusz musi to wymyślić i przekazać wstępny szablon głównemu front-endowcowi. Następnie wspólnie ustalają to co będzie najlepiej wyglądało na stronie i co będzie możliwe do odtworzenia podczas programowania. Sergiusz, tak jak Hubert jest prezenterem naszego projektu. Sergiusz już od wielu lat trenuje wioślarstwo i nie raz stawał na najwyższym podium w tym sporcie, w tym na mistrzostwach polski. Ponadto jest pasjonatem starej muzyki z lat 70,80. Samemu gra również na gitarze.
+        </div>
+    
+    <div class="fields">
+        <div class="textfield1"></div>
+        <div class="photofield1"></div>
+        <div class="photofield2"></div>
+        <div class="textfield2"></div>
+        <div class="kontaktbox">
+            <div class="kontakt">
+                <div class="mail1">support1@smakiszczecina.pl</div>
+                <div class="mail2">support1@smakiszczecina.pl</div>
+                <div class="mail3">support1@smakiszczecina.pl</div>
+                <div class="tel1">+48 123 456 789</div>
+                <div class="tel2">+48 123 456 789</div>
+                <div class="adres1">Szczecin, Mazowiecka 13, 70-526</div>
+                </div>
+            <div class="actions">
+                <div class="napisz1">napisz</div>
+                <div class="napisz2">napisz</div>
+                <div class="napisz3">napisz</div>
+                <div class="zadzwoń1">zadzwoń</div>
+                <div class="zadzwoń2">zadzwoń</div>
+                <div class="podgląd">podgląd</div>
+            </div>
+        
+    </div>
+        <div class="mapa"></div>
+    </div>
+
+    <div class="ourphotos">
+        <div class="zd1"><img src="{% static 'img/Brasławski_Sergiusz.jpg' %}"  width="210" height="320"></div>
+        <div class="zd2"><img src="{% static 'img/Bertin_Hubert.jpg' %}"  width="210" height="320"></div>
+        <div class="zd3"><img src="{% static 'img/Celiński_Kacper.jpg' %}"  width="210" height="320"></div>
+        <div class="zd4"><img src="{% static 'img/mateusz_zielecki.jpg' %}"  width="210" height="320"></div>
+        <div class="texts">
+            <div class="txt1">Sergiusz</div>
+            <div class="txt2">Hubert</div>
+            <div class="txt3">Kacper</div>
+            <div class="txt4">Mateusz</div>
+        </div>
+    </div>
+
+
+
+{% endblock %}
