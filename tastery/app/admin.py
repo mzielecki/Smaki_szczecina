@@ -6,8 +6,8 @@ from app.models import Restaurant, Categorie
 
 
 class AuthorAdmin(admin.ModelAdmin):
-    fields = ('name', 'description', 'address', 'district', 'price', 'rating', 'image')
-    list_display = ('name', 'description', 'address', 'district', 'price', 'rating', 'image')
+    fields = ('name', 'description', 'category', 'address', 'district', 'price', 'rating', 'image')
+    list_display = ('name', 'description', 'category', 'address', 'district', 'price', 'rating', 'image')
 
 
 class AuthorAdmin2(admin.ModelAdmin):

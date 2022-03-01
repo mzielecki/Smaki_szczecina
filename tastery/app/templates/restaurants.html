@@ -9,20 +9,12 @@
         <div class="sort_panel">
             <div class="sort_label">Sort:</div>
             <div class="sort_options">
-                <select>
-                    <option>Cena najmniejsza</option>
-                    <option>Cena największa</option>
+                <select id="order_dropdown">
+                    <option value="1">Cena najmniejsza</option>
+                    <option value="2">Cena największa</option>
                 </select>
             </div>
-            <div class="sort_label">Odległość: </div>
-            <div class="sort_options">
-                <select>
-                    <option>Jak najbliżej</option>
-                    <option>do 5km</option>
-                    <option>do 10km</option>
-                    <option>do 15km</option>
-                </select>
-            </div>
+
         </div>
 
 
@@ -33,7 +25,7 @@
 
                 {% for categorie in categories %}
 
-                <div>{{ categorie.category }}</div>
+                    <div><a href="{% url 'restaurants_list' %}?category={{ categorie.category }}"> {{ categorie.category }}</a></div>
 
                 {% endfor %}
 
@@ -62,6 +54,6 @@
 
             </div>
 
-
+<script src="{% static 'js/dropdown.js' %}"></script>
 
 {% endblock %}

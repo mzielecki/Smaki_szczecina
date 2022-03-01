@@ -1,6 +1,11 @@
 from django.db import models
 
 # Create your models here.
+
+class Categorie(models.Model):
+    category = models.CharField(max_length=50)
+
+
 class Restaurant(models.Model):
     name = models.CharField(max_length=50)
     address = models.CharField(max_length=50)
@@ -11,7 +16,7 @@ class Restaurant(models.Model):
     description = models.CharField(max_length=100)
     district = models.CharField(max_length=50)
     image = models.ImageField(blank=True)
+    category = models.ForeignKey(Categorie, on_delete=models.CASCADE, default=True, null=False)
 
 
-class Categorie(models.Model):
-    category = models.CharField(max_length=50)
+
