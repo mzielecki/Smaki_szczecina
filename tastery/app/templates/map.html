@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+
+{% block content %}
+
+<div id="map"></div>
+
+<script>
+
+    let mapOptions = {
+    center:[53.4255, 14.5659],
+    zoom:12
+}
+
+let map = new L.map('map' , mapOptions);
+
+let layer = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+map.addLayer(layer);
+
+let marker = new L.Marker([ 53.38247963063532, 14.656169809447116]);
+marker.addTo(map);
+
+marker.bindPopup("<a href="{% url 'restaurant' %}'>Rydla 52</a>");
+marker.on('mouseover', function (m) {
+    this.openPopup();
+});
+marker.on('mouseout', function (m) {
+    setTimeout( () =>{
+        this.closePopup();
+    },1000);
+});
+
+let marker2 = new L.Marker([ 53.382318045458675, 14.656797866505507]);
+marker2.addTo(map);
+
+marker2.bindPopup("Mayday");
+marker2.on('mouseover', function (m2) {
+    this.openPopup();
+});
+marker2.on('mouseout', function (m2) {
+    setTimeout( () =>{
+        this.closePopup();
+    },1000);
+});
+
+let marker3 = new L.Marker([ 53.428639376168164, 14.549632420308441]);
+marker3.addTo(map);
+
+marker3.bindPopup("Pizza Hut");
+marker3.on('mouseover', function (m3) {
+    this.openPopup();
+});
+marker3.on('mouseout', function (m3) {
+    setTimeout( () =>{
+        this.closePopup();
+    },1000);
+});
+
+let marker4 = new L.Marker([ 53.42720615577003, 14.55512494830131]);
+marker4.addTo(map);
+
+marker4.bindPopup("Na Widelcu");
+marker4.on('mouseover', function (m4) {
+    this.openPopup();
+});
+marker4.on('mouseout', function (m4) {
+    setTimeout( () =>{
+        this.closePopup();
+    },1000);
+});
+
+let marker5 = new L.Marker([ 53.43263006346384, 14.539333604272173]);
+marker5.addTo(map);
+
+marker5.bindPopup("Sake");
+marker5.on('mouseover', function (m5) {
+    this.openPopup();
+});
+marker5.on('mouseout', function (m5) {
+    setTimeout( () =>{
+        this.closePopup();
+    },1000);
+});
+
+let marker6 = new L.Marker([ 53.43458099817164, 14.538304021790225]);
+marker6.addTo(map);
+
+marker6.bindPopup("Sorento");
+marker6.on('mouseover', function (m6) {
+    this.openPopup();
+});
+marker6.on('mouseout', function (m6) {
+    setTimeout( () =>{
+        this.closePopup();
+    },1000);
+});
+
+let marker7 = new L.Marker([ 53.43124893896611, 14.541736634734264]);
+marker7.addTo(map);
+
+marker7.bindPopup("Bar Pasztecik");
+marker7.on('mouseover', function (m7) {
+    this.openPopup();
+});
+marker7.on('mouseout', function (m7) {
+    setTimeout( () =>{
+        this.closePopup();
+    },1000);
+});
+
+let marker8 = new L.Marker([ 53.43157880755328, 14.549357653596086]);
+marker8.addTo(map);
+
+marker8.bindPopup("Baranowa Szklarnia");
+marker8.on('mouseover', function (m8) {
+    this.openPopup();
+});
+marker8.on('mouseout', function (m8) {
+    setTimeout( () =>{
+        this.closePopup();
+    },1000);
+});
+
+let marker9 = new L.Marker([ 53.428383614546895, 14.549889778468497]);
+marker9.addTo(map);
+
+marker9.bindPopup("Corona Coffee Kaszubska");
+marker9.on('mouseover', function (m9) {
+    this.openPopup();
+});
+marker9.on('mouseout', function (m9) {
+    setTimeout( () =>{
+        this.closePopup();
+    },1000);
+});
+
+</script>
+
+{% endblock %}

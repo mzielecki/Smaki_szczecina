@@ -56,7 +56,6 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            'app/templates',
             'tastery/app/templates'
         ],
         'APP_DIRS': True,
@@ -132,4 +131,4 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-MEDIA_ROOT = 'tastery/app/static/img'
+MEDIA_ROOT = 'app/static/img'

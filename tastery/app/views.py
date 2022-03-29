@@ -5,43 +5,39 @@ from .models import Restaurant, Categorie
 
 
 def index(request: HttpRequest) -> HttpResponse:
-
     return render(request, 'index.html')
 
 
 def restaurants(request: HttpRequest) -> HttpResponse:
-
-    category = request.GET.get('category')
-
-    if category == None or category == 'Wszystkie':
-        restaurants = Restaurant.objects.order_by('name')
-    else:
-        restaurants = Restaurant.objects.filter(category__category=category)
-
-    categories = Categorie.objects.all()
-
+    all_categories = Categorie.objects.order_by()
+    all_restaurants = Restaurant.objects.order_by('name')
     return render(request, 'restaurants.html', {
-        'restaurants': restaurants,
-        'categories': categories
+        'restaurants': all_restaurants,
+        'categories': all_categories
     })
 
 
 def gallery(request: HttpRequest) -> HttpResponse:
-
     return render(request, 'gallery.html')
 
 
 def about(request: HttpRequest) -> HttpResponse:
-
     return render(request, 'about.html')
 
 
 def contacts(request: HttpRequest) -> HttpResponse:
-
     return render(request, 'contacts.html')
 
 
+def map(request: HttpRequest) -> HttpResponse:
+    return render(request, 'map.html')
 
 
-
-
+def restaurant(request: HttpRequest, res_id) -> HttpResponse:
+    r = Restaurant.objects.get(id=res_id)
+    all_r = Restaurant.objects.all()
+    context = {
+        'd_res': all_r,
+        'r_id': r
+    }
+    return render(request, 'sub_restaurant.html', context)

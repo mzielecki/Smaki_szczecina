@@ -1,7 +1,7 @@
 body{
     background-color: #17181c;
     font-family: Sansation;
-    overflow: hidden;
+    overflow: scroll;
     min-height: 500px;
     height: auto;
 }
@@ -162,7 +162,7 @@ a:hover{
 
 .text1{
     color: white;
-    font-size: 60px;
+    font-size: 270%;
     text-align: left;
     font-weight: bold;
     margin-top: 20vh;
@@ -367,7 +367,7 @@ a:hover{
     color: white;
     margin-left: 1.5vw;
     margin-top: 2vh;
-    font-size: 30px;
+    font-size: 125%;
 }
 
 .categories_panel div{
@@ -420,6 +420,7 @@ a:hover{
     margin-left: 1vw;
     color: #7a7f84;
     float: left;
+    height: 10%;
 }
 
 .restaurant_cost{
@@ -756,5 +757,321 @@ a:hover{
     margin-top: 30px;
 }
 
+#map{
+    width: 100%;
+    height: 95vh;
+}
 
 
+.left_side{
+    background-color: #17181c;
+    float: left;
+    height: 130vh;
+    width: 65%;
+}
+
+.right_side{
+    background-color: #17181c;
+    float: left;
+    height: 130vh;
+    width: 35%;
+    margin-top: 1%;
+}
+
+.left_img{
+    float: left;
+    width: 100%;
+    /*height: 500px;*/
+    margin-top: 2%;
+    margin-left: 2%;
+    height: 60%;
+}
+
+#l_img{
+    float: left;
+    width: 95%;
+    height: 100%;
+}
+
+.left_right_side{
+    float: left;
+    width: 40%;
+    height: 80vh;
+}
+
+.right_right_side{
+    float: left;
+    width: 60%;
+    height: 80vh;
+}
+
+.button_check{
+    position: absolute;
+    background-color: #fa9127;
+    width: 8%;
+    height: 5%;
+    border-radius: 50px;
+    left: 30%;
+    text-align: center;
+}
+
+#link_a{
+    color: white;
+}
+
+#link_a:hover{
+    color: #393a3e;
+}
+
+#przycisk_link{
+    margin-top: 8%;
+}
+
+.prices{
+    font-size: 80%;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: 32.5%;
+    top: 130%;
+}
+
+#restaurant_name{
+    color: white;
+    font-size: 220%;
+    font-weight: normal;
+    font-family: Sansation Light;
+}
+
+#restaurant_adress{
+    font-size: 80%;
+    color: #73777D;
+    font-weight: normal;
+    margin-top: 1%;
+}
+
+#restaurant_time{
+    font-size: 80%;
+    color: white;
+    font-weight: normal;
+    margin-top: 15%;
+}
+
+.day-n-our1{
+    font-size: 80%;
+    color: white;
+    font-family: Sansation Light;
+    margin-top: 7%;
+    margin-left: 5%;
+}
+
+.day-n-our{
+    font-size: 80%;
+    color: white;
+    font-family: Sansation Light;
+    margin-left: 5%;
+    font-weight: bold;
+}
+
+.contact{
+    font-size: 80%;
+    color: white;
+    font-weight: normal;
+    margin-top: 7%;
+}
+.bottom_left{
+    float: left;
+    width: 100%;
+}
+
+.text3{
+    font-size: 80%;
+    color: #73777D;
+    font-family: Sansation Light;
+    margin-top: 1%;
+    margin-left: 3%;
+    position: absolute;
+    width: 60%;
+}
+
+.sub_title3{
+    color: white;
+    font-size: 200%;
+    font-weight: normal;
+    font-family: Sansation Light;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-top: 13%;
+}
+
+.sub_title2{
+    color: white;
+    font-size: 200%;
+    font-weight: normal;
+    font-family: Sansation Light;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+.sub_title{
+    color: white;
+    font-size: 200%;
+    font-weight: normal;
+    font-family: Sansation Light;
+    font-weight: bold;
+    margin-top: 110%;
+}
+
+.sub_text{
+    font-size: 80%;
+    color: #73777D;
+    font-family: Sansation Light;
+    margin-top: 1%;
+    margin-left: 3%;
+    position: absolute;
+    width: 60%;
+}
+
+.map_section{
+    float: right;
+    height: 35vh;
+    width: 96%;
+    background-color: #fa9127;
+    margin-top: 10%;
+    margin-right: 4%;
+    background-image: url("mapa.png");
+    background-position: center;
+    background-size: cover
+;
+}
+
+.baner_reklamowy {
+    background:url('dj.png');
+    position: relative;
+    width: 93%;
+    height: 80vh;
+    float: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 7px;
+}
+
+.layer {
+    background-color: rgba(0, 0, 0, 0.5);
+    float: left;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.gorny_blok{
+    width: 85%;
+    height: 40%;
+    margin-top: 7.5%;
+    margin-left: 7.5%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    position: relative;
+}
+
+.przycisko_blok{
+    width: 85%;
+    height: 10%;
+    margin-top: 85%;
+    margin-left: 7.5%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    position: absolute;
+    text-align: center;
+}
+
+.przycisko_blok:hover{
+    background-color: rgba(255, 145, 0, 0.8);
+}
+
+.sprzawdz{
+    color: #FFFFFF;
+    background-color: transparent;
+    font-size: 100%;
+    font-weight: bold;
+    font-family: Sansation;
+    position: relative;
+    width: 86%;
+    margin-left: 5%;
+}
+
+#polecane_nazwa{
+    color: #FFFFFF;
+    background-color: transparent;
+    font-size: 100%;
+    font-weight: bold;
+    font-family: Sansation;
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 7%;
+    width: 86%;
+}
+
+.podtekst{
+    font-size: 80%;
+    color: white;
+    font-family: Sansation Light;
+    margin-top: 25%;
+    margin-left: 7%;
+    position: absolute;
+}
+
+.podtekst2{
+    font-size: 80%;
+    color: white;
+    font-family: Sansation Light;
+    margin-top: 25%;
+    margin-left: 50%;
+    position: absolute;
+}
+
+.text2{
+    font-size: 80%;
+    color: #73777D;
+    font-family: Sansation Light;
+    margin-top: 35%;
+    margin-left: 7%;
+    position: absolute;
+    width: 85%;
+}
+
+.logo{
+    height: 15vh;
+    width: 20%;
+    border-top: 1vh solid #17181c;
+    float: left;
+    background: url(logo.png);
+    background-position: 25% -200%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menuleft{
+    background-color: #17181c;
+    border-bottom: 2px solid #393a3e;
+    width: 19%;
+    height: 5vh;
+    float: left;
+    color: #78797d;
+    text-align: center;
+    font-size: 25px;
+}
+
+.menuright{
+    background-color: #17181c ;
+    border-bottom: 2px solid #393a3e;
+    color: #78797d;
+    width: 60%;
+    height: 5vh;
+    float: left;
+    overflow: hidden;
+}

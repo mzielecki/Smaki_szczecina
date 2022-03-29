@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+{% block content %}
+
+    {% for restaurant in d_res %}
+
+    <!-------------------------------------------------------------------------------------->
+    <!-- lewa strona -->
+    <div class="left_side">
+        <div class = "left_img">
+        <img src="{{ restaurant.image.url }}" id="l_img">
+        </div>
+
+        <div class="bottom_left">
+            <h2 class="sub_title2">O restauracji</h2>
+
+            <p class="text3">{{ restaurant.description }}</p>
+
+            <h2 class="sub_title3">Menu i zakres cen</h2>
+
+            <p class="sub_text">Możesz zobaczyć menu klikając nastepujący link:</p>
+
+            <p class="sub_text" style="margin-top: 4%;">Średni zakres cen dla tej restauracji to:</p>
+
+            <a href="restaurant.html" id="link_a"><div class="button_check"><p id="przycisk_link">Link</p></div></a>
+
+            <p class="prices">{{ restaurant.price }}</p>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------------------------------->
+    <!-- prawa strona -->
+    <div class="right_side">
+        <div class ="left_right_side">
+            <h1 id="restaurant_name">{{ restaurant.name }}</h1>
+            <p id="restaurant_adress">{{ restaurant.address }}</p>
+
+            <h3 id="restaurant_time">
+                Godziny Otwarcia:
+            </h3>
+
+                <p class="day-n-our1">
+                    Poniedziałek
+                </p>
+                <p class="day-n-our">
+                    10:00 - 22:00
+                </p>
+
+                <p class="day-n-our">
+                    Wtorek
+                </p>
+                <p class="day-n-our">
+                    10:00 - 22:00
+                </p>
+
+                <p class="day-n-our">
+                    Środa
+                </p>
+                <p class="day-n-our">
+                    10:00 - 22:00
+                </p>
+
+                <p class="day-n-our">
+                    Czwartek
+                </p>
+                <p class="day-n-our">
+                    10:00 - 22:00
+                </p>
+
+                <p class="day-n-our">
+                    Piątek
+                </p>
+                <p class="day-n-our">
+                    10:00 - 22:00
+                </p>
+
+                <p class="day-n-our">
+                    Sobota
+                </p>
+                <p class="day-n-our">
+                    10:00 - 22:00
+                </p>
+
+                <p class="day-n-our">
+                    Niedziela
+                </p>
+                <p class="day-n-our">
+                    10:00 - 22:00
+                </p>
+
+                <p class="contact">
+                    Kontakt:
+                </p>
+
+                <p class="day-n-our1">
+                    tel. 885 907 050
+                </p>
+
+                <p class="day-n-our">
+                    email: biuro@rydla52.pl
+                </p>
+
+                <p class="day-n-our">
+                    Mariusz Kowalski
+                </p>
+
+                <p class="day-n-our">
+                    Świnka Peppa
+                </p>
+
+            <h2 class="sub_title">Mapa:</h2>
+
+        </div>
+
+        <div class ="right_right_side">
+
+            <div class ="baner_reklamowy">
+                <div class="layer"></div>
+
+                <div class="gorny_blok">
+
+                    <h2 id="polecane_nazwa">Polecana restauracja: blah blah blah</h2>
+
+                    <p class="podtekst">24.03.2022</p>
+                    <p class="podtekst2">od 10:00 do 21:00</p>
+
+                    <p class="text2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scram printer took.</p>
+
+                </div>
+
+                <div class="przycisko_blok">
+                    <a href="restaurant.html" id="link"><p class="sprzawdz">Sprawdź</p></a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class ="map_section"></div>
+    </div>
+
+    {% endfor %}
+
+
+    <!-------------------------------------------------------------------------------------->
+    <!-- footer -->
+    <div class="footer">
+        <div class="mediaa">instagram</div>
+        <div class="mediaa">facebook</div>
+        <div class="mediaa">twitter</div>
+        <div class="mediaa">mail</div>
+    </div>
+    <!-------------------------------------------------------------------------------------->
+
+
+{% endblock %}
