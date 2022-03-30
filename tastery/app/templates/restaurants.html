@@ -33,7 +33,7 @@
 
                 {% for categorie in categories %}
 
-                <div>{{ categorie.category }}</div>
+                    <div><a href="{% url 'restaurants_list' %}?category={{ categorie.category }}"> {{ categorie.category }}</a></div>
 
                 {% endfor %}
 

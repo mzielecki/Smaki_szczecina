@@ -9,11 +9,19 @@ def index(request: HttpRequest) -> HttpResponse:
 
 
 def restaurants(request: HttpRequest) -> HttpResponse:
-    all_categories = Categorie.objects.order_by()
-    all_restaurants = Restaurant.objects.order_by('name')
+
+    category = request.GET.get('category')
+
+    if category == None or category == 'Wszystkie':
+        restaurants = Restaurant.objects.order_by('name')
+    else:
+        restaurants = Restaurant.objects.filter(category__category=category)
+
+    categories = Categorie.objects.all()
+
     return render(request, 'restaurants.html', {
-        'restaurants': all_restaurants,
-        'categories': all_categories
+        'restaurants': restaurants,
+        'categories': categories
     })
 
 

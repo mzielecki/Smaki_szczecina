@@ -1075,3 +1075,18 @@ a:hover{
     float: left;
     overflow: hidden;
 }
+
+.leaflet-control-zoom-in{
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.leaflet-control-zoom-out{
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.leaflet-control-zoom{
+    margin-top: 0px;
+    margin-left: 0px;
+}

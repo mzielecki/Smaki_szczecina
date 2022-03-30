@@ -23,7 +23,7 @@ map.addLayer(layer);
 let marker = new L.Marker([ 53.38247963063532, 14.656169809447116]);
 marker.addTo(map);
 
-marker.bindPopup("<a href="{% url 'restaurant' %}'>Rydla 52</a>");
+marker.bindPopup("<a href=''>Rydla 52</a>");
 marker.on('mouseover', function (m) {
     this.openPopup();
 });
