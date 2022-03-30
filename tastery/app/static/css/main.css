@@ -406,7 +406,7 @@ a:hover{
 }
 
 .restaurant_name{
-    font-size: 20px;
+    font-size: 115%;
     font-weight: bold;
     margin-top: 1.5vh;
     margin-left: 1vw;
@@ -415,7 +415,7 @@ a:hover{
 
 .restaurant_content{
     width: 15vw;
-    font-size: 16px;
+    font-size: 90%;
     margin-top: 3vh;
     margin-left: 1vw;
     color: #7a7f84;
@@ -424,7 +424,7 @@ a:hover{
 }
 
 .restaurant_cost{
-    font-size: 20px;
+    font-size: 115%;
     margin-top: 3vh;
     margin-left: 3vw;
     font-weight: bold;
@@ -451,6 +451,7 @@ a:hover{
     float: left;
     padding-top: 1vh;
     margin-left: 1vw;
+    font-size: 90%;
 }
 
 .photo_block{
