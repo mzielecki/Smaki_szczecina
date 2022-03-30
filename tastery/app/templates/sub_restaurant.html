@@ -25,9 +25,9 @@
 
             <p class="sub_text" style="margin-top: 4%;">Średni zakres cen dla tej restauracji to:</p>
 
-            <a href="restaurant.html" id="link_a"><div class="button_check"><p id="przycisk_link">Link</p></div></a>
+            <a href="" id="link_a"><div class="button_check"><p id="przycisk_link">Link</p></div></a>
 
-            <p class="prices">{{ restaurant.price }}</p>
+            <p class="prices">{{ restaurant.price }} zł/szt.</p>
         </div>
     </div>
 
@@ -139,7 +139,10 @@
 
         </div>
 
-        <div class ="map_section"></div>
+        <div class ="map_section">
+            <iframe width="100%" height="100%" src="https://www.openstreetmap.org/export/embed.html?bbox={{ restaurant.y }}%2C{{ restaurant.x }}%2C{{ restaurant.y }}%2C{{ restaurant.x }}&amp;layer=mapnik&amp;marker={{ restaurant.x }}%2C{{ restaurant.y }}" style="border: 1px solid black"></iframe><br/>
+            <small><a href="https://www.openstreetmap.org/?mlat=53.40131&amp;mlon=14.48439#map=19/53.40131/14.48439&amp;layers=N">View Larger Map</a></small>
+        </div>
     </div>
 
 

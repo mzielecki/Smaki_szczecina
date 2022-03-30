@@ -20,10 +20,10 @@ let map = new L.map('map' , mapOptions);
 let layer = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
 map.addLayer(layer);
 
-let marker = new L.Marker([ 53.38247963063532, 14.656169809447116]);
+let marker = new L.Marker([ 53.40166060303407, 14.484306652844651]);
 marker.addTo(map);
 
-marker.bindPopup("<a href=''>Rydla 52</a>");
+marker.bindPopup("<a href='{% url "restaurant" 10 %}'>Na Uboczu</a>");
 marker.on('mouseover', function (m) {
     this.openPopup();
 });
@@ -33,10 +33,10 @@ marker.on('mouseout', function (m) {
     },1000);
 });
 
-let marker2 = new L.Marker([ 53.382318045458675, 14.656797866505507]);
+let marker2 = new L.Marker([ 53.40802390679186, 14.49102130339558]);
 marker2.addTo(map);
 
-marker2.bindPopup("Mayday");
+marker2.bindPopup("<a href='{% url "restaurant" 9 %}'>Restauracja Kuźnia</a>");
 marker2.on('mouseover', function (m2) {
     this.openPopup();
 });
@@ -46,10 +46,10 @@ marker2.on('mouseout', function (m2) {
     },1000);
 });
 
-let marker3 = new L.Marker([ 53.428639376168164, 14.549632420308441]);
+let marker3 = new L.Marker([ 53.393984917225296, 14.50196326551249]);
 marker3.addTo(map);
 
-marker3.bindPopup("Pizza Hut");
+marker3.bindPopup("<a href='{% url "restaurant" 8 %}'>La Rotonda</a>");
 marker3.on('mouseover', function (m3) {
     this.openPopup();
 });
@@ -59,10 +59,10 @@ marker3.on('mouseout', function (m3) {
     },1000);
 });
 
-let marker4 = new L.Marker([ 53.42720615577003, 14.55512494830131]);
+let marker4 = new L.Marker([ 53.43276979058968, 14.512448990926405]);
 marker4.addTo(map);
 
-marker4.bindPopup("Na Widelcu");
+marker4.bindPopup("<a href='{% url "restaurant" 7 %}'>La Casa De Kebab</a>");
 marker4.on('mouseover', function (m4) {
     this.openPopup();
 });
@@ -72,10 +72,10 @@ marker4.on('mouseout', function (m4) {
     },1000);
 });
 
-let marker5 = new L.Marker([ 53.43263006346384, 14.539333604272173]);
+let marker5 = new L.Marker([ 53.44123130910707, 14.48974912039133]);
 marker5.addTo(map);
 
-marker5.bindPopup("Sake");
+marker5.bindPopup("<a href='{% url "restaurant" 6 %}'>Pizzeria Perugia</a>");
 marker5.on('mouseover', function (m5) {
     this.openPopup();
 });
@@ -85,10 +85,10 @@ marker5.on('mouseout', function (m5) {
     },1000);
 });
 
-let marker6 = new L.Marker([ 53.43458099817164, 14.538304021790225]);
+let marker6 = new L.Marker([ 53.45505895333951, 14.551347463285072]);
 marker6.addTo(map);
 
-marker6.bindPopup("Sorento");
+marker6.bindPopup("<a href='{% url "restaurant" 5 %}'>Thanh Long</a>");
 marker6.on('mouseover', function (m6) {
     this.openPopup();
 });
@@ -98,10 +98,10 @@ marker6.on('mouseout', function (m6) {
     },1000);
 });
 
-let marker7 = new L.Marker([ 53.43124893896611, 14.541736634734264]);
+let marker7 = new L.Marker([ 53.42397296376814, 14.559329377480795]);
 marker7.addTo(map);
 
-marker7.bindPopup("Bar Pasztecik");
+marker7.bindPopup("<a href='{% url "restaurant" 4 %}'>Buddha Thai & Fusion Restaurant</a>");
 marker7.on('mouseover', function (m7) {
     this.openPopup();
 });
@@ -111,10 +111,10 @@ marker7.on('mouseout', function (m7) {
     },1000);
 });
 
-let marker8 = new L.Marker([ 53.43157880755328, 14.549357653596086]);
+let marker8 = new L.Marker([ 53.42404819704924, 14.559344507493526]);
 marker8.addTo(map);
 
-marker8.bindPopup("Baranowa Szklarnia");
+marker8.bindPopup("<a href='{% url "restaurant" 3 %}'>Tokyo Sushi'n'Grill</a>");
 marker8.on('mouseover', function (m8) {
     this.openPopup();
 });
@@ -124,14 +124,27 @@ marker8.on('mouseout', function (m8) {
     },1000);
 });
 
-let marker9 = new L.Marker([ 53.428383614546895, 14.549889778468497]);
+let marker9 = new L.Marker([ 53.42474358099568, 14.561303579253888]);
 marker9.addTo(map);
 
-marker9.bindPopup("Corona Coffee Kaszubska");
+marker9.bindPopup("<a href='{% url "restaurant" 2 %}'>King John's Bagels</a>");
 marker9.on('mouseover', function (m9) {
     this.openPopup();
 });
 marker9.on('mouseout', function (m9) {
+    setTimeout( () =>{
+        this.closePopup();
+    },1000);
+});
+
+let marker10 = new L.Marker([ 53.44116180789728, 14.513433036006859]);
+marker9.addTo(map);
+
+marker10.bindPopup("<a href='{% url "restaurant" 1 %}'>Pizzeria Peperoni</a>");
+marker10.on('mouseover', function (m10) {
+    this.openPopup();
+});
+marker10.on('mouseout', function (m10) {
     setTimeout( () =>{
         this.closePopup();
     },1000);

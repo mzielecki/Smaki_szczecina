@@ -16,3 +16,5 @@ class Restaurant(models.Model):
     district = models.CharField(max_length=50)
     image = models.ImageField(blank=True)
     category = models.ForeignKey(Categorie, on_delete=models.CASCADE, default=True, null=False)
+    x = models.CharField(max_length=100)
+    y = models.CharField(max_length=100)
