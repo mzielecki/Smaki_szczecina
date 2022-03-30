@@ -35,9 +35,7 @@ def map(request: HttpRequest) -> HttpResponse:
 
 def restaurant(request: HttpRequest, res_id) -> HttpResponse:
     r = Restaurant.objects.get(id=res_id)
-    all_r = Restaurant.objects.all()
     context = {
-        'd_res': all_r,
-        'r_id': r
+        'restaurant': r
     }
     return render(request, 'sub_restaurant.html', context)
