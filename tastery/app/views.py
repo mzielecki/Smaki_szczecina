@@ -1,7 +1,7 @@
 from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render
 
-from .models import Restaurant, Categorie
+from .models import Restaurant, Categorie, Opinions
 
 
 def index(request: HttpRequest) -> HttpResponse:
@@ -32,6 +32,9 @@ def gallery(request: HttpRequest) -> HttpResponse:
 def about(request: HttpRequest) -> HttpResponse:
     return render(request, 'about.html')
 
+def opinions(request: HttpRequest) -> HttpResponse:
+    return render(request, 'opinions.html')
+
 
 def contacts(request: HttpRequest) -> HttpResponse:
     return render(request, 'contacts.html')
@@ -47,3 +50,10 @@ def restaurant(request: HttpRequest, res_id) -> HttpResponse:
         'restaurant': r
     }
     return render(request, 'sub_restaurant.html', context)
+
+def opinions(request: HttpRequest) -> HttpResponse:
+    opinions = Opinions.objects.order_by('id')
+    return render(request, 'opinions.html', {
+        'opinions': opinions
+    }
+    )

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+
+{% block content %}
+
+    <div class="sort_panel"></div>
+
+    <div class="main_block">
+
+    {% for opinion in opinions %}
+
+        <div class="opinion_box">
+            <div class="r_name_opinion">{{ opinion.restaurant_name }}</div>
+            <div class="opinion">{{ opinion.opinion }}</div>
+            <div class="rating">{{ opinion.rating }}</div>
+        </div>
+    {% endfor %}
+
+    </div>
+
+{% endblock %}
