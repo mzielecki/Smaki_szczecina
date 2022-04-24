@@ -6,26 +6,16 @@
 
 {% block content %}
 
-        <div class="left">
-            <div class="text1">Najpyszniejsze miejsca w Szczecinie</div>
-            <div class="look">
-                <div class="line"></div>
-                <div class="looktext">Zobacz wszystkie restauracje</div>
-            </div>
-            <div class="buttonleft">
-                <a href="{% url 'restaurants_list' %}">
-                    <div class="button">
-                        <div class="fire"><img src="{% static 'img/fire.png' %}" width="20px" height="20px"></div>
-                        <div class="buttontext">Zacznij</div>
-                    </div>
-                </a>
-            </div>
+        <div class="middle-container" id="middle-container">
+            <div class="middle-text" id="middle-text">Poznaj</div>
+            <img src="{% static 'img/logo_es.png' %}" class="logo-slide" id="logo-slide"></img>
+            <div class="skip-circle" id="skip-circle" onclick="essa()"></div>
         </div>
 
 
-        <div class="right">
-            <div class="photos">
-                <div class="embla">
+
+        <div class="slider-container" id="slider-container">
+            <div class="embla">
                     <div class="gradient-fade-left"></div>
                     <div class="embla__viewport">
                         <div class="embla__container">
@@ -70,13 +60,29 @@
 
                   </script>
             </div>
-            <div class="underphotos">
-                <div class="circle"></d
-                    iv>
-                <div class="firstline"></div>
-                <div class="textunderphotos">Zobacz więcej</div>
-                <div class="secondline"></div>
+
+        <div class="bottom-container" id="bottom-container">
+            <div class="container">
+                <div class="text-container">Odkryj szlak szczecińskich smaków</div>
+                <a href="{% url 'restaurants_list' %}" class="button">Prowadź mnie</a>
             </div>
         </div>
+    </div>
+
+
+    <script>
+        document.getElementById("middle-container").style.height = window.innerHeight + "px";
+        document.getElementById("slider-container").style.height = window.innerHeight / 2 + "px";
+        document.getElementById("bottom-container").style.height = window.innerHeight / 2 + "px";
+
+        function essa() {
+            var element = document.getElementById("slider-container");
+            element.scrollIntoView({behavior: "smooth"});
+        }
+
+        window.onbeforeunload = () => {
+            window.scrollTo(0, 0);
+        };
+    </script>
 
 {% endblock %}

@@ -29,11 +29,11 @@
 
         <div class="left_panel">
             <div class="categories_panel">
-                <h2>Kategorie</h2>
+                <h2 style="background-color:#1e2225"> Kategorie</h2>
 
                 {% for categorie in categories %}
 
-                    <div><a href="{% url 'restaurants_list' %}?category={{ categorie.category }}"> {{ categorie.category }}</a></div>
+                    <div style="background-color:#1e2225"><a style="background-color:#1e2225" href="{% url 'restaurants_list' %}?category={{ categorie.category }}"> {{ categorie.category }}</a></div>
 
                 {% endfor %}
 
@@ -52,11 +52,11 @@
                         <div class="restaurant_img"><img src="{% static 'img/fb-42.png' %}" width="100%" height="180"/></div>
                     {% endif %}
 
-                    <div class="restaurant_name">{{ restaurant.name }}</div>
-                    <div class="restaurant_content">{{ restaurant.description }}</div>
-                    <div class="restaurant_cost">{{ restaurant.price }} zł/szt</div>
+                    <div class="restaurant_name" style="background-color:white">{{ restaurant.name }}</div>
+                    <div class="restaurant_content" style="background-color:white">{{ restaurant.description }}</div>
+                    <div class="restaurant_cost" style="background-color:white">{{ restaurant.price }} zł/szt</div>
                         <a href="{% url 'restaurant' restaurant.id %}"><div class="restaurant_check_button">Sprawdź</div></a>
-                        <div class="restaurant_district">{{ restaurant.district }}</div>
+                        <div class="restaurant_district" style="background-color:white">{{ restaurant.district }}</div>
                     </div>
                  {% endfor %}
 
