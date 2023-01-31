@@ -22,7 +22,7 @@ git clone https://github.com/mzielecki/Smaki_szczecina.git
 Open the `index.html` file in a web browser
 
 ## Technical Details
-Smaki Szczecina is built with HTML, CSS, and JavaScript and does not require any additional dependencies or installations. The application is designed to be run locally in a web browser and does not require a web server.
+Smaki Szczecina is built with HTML, CSS, Python and JavaScript and does not require any additional dependencies or installations. The application is designed to be run locally in a web browser and does not require a web server.
 
 ## Contributions
 This project is open source and contributions are welcome. Please fork the repository, make your changes, and submit a pull request.
