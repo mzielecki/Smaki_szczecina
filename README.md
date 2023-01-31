@@ -1,18 +1,24 @@
 # Smaki Szczecina
-Smaki Szczecina is a simple, single-page web application that allows users to discover and review local restaurants in Szczecin, Poland.
+Smaki Szczecina is a web application that provides a platform for users to discover and review restaurants in Szczecin, Poland. The application has a clean and user-friendly interface that makes it easy to navigate and find the information you need.
 
 ## Features
-* Discover local restaurants with a brief description and ratings.
+* Search for restaurants based on name or cuisine type.
+* View restaurant details, including a brief description, address, and ratings from other users.
 * Leave your own review and rating for a restaurant.
-* Browse restaurants by cuisine type.
+* Sort restaurants by average rating or number of reviews.
+* Responsive design for optimal viewing on different devices.
 ## Requirements
-* A modern web browser
+* A modern web browser with JavaScript enabled (Google Chrome, Mozilla Firefox, Safari, etc.)
+* Internet connection
 ## Installation
 1. Clone the repository to your local machine
 ```
 git clone https://github.com/mzielecki/Smaki_szczecina.git
 ```
 Open the `index.html` file in a web browser
+
+## Technical Details
+Smaki Szczecina is built with HTML, CSS, and JavaScript and does not require any additional dependencies or installations. The application is designed to be run locally in a web browser and does not require a web server.
 
 ## Contributions
 This project is open source and contributions are welcome. Please fork the repository, make your changes, and submit a pull request.
